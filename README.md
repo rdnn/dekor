@@ -25,7 +25,7 @@ The DEKOR Lighting Protocol is sent entirely in plain text over TCP port 4001 to
 
 ## Examples
 ### Turn Lights On
-````
+````php
 $fp = fsockopen('10.0.0.X', 4001, $errno, $errstr, 30);
 
 $command = sprintf('+;1;SETSTATE;%s;%d;',
@@ -39,7 +39,7 @@ fclose($fp);
 ````
 
 ### Set Lighting Level to 50%
-````
+````php
 $fp = fsockopen('10.0.0.X', 4001, $errno, $errstr, 30);
 
 $command = sprintf('+;1;SETLEVEL;%d;%d;',
