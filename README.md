@@ -67,7 +67,7 @@ fclose($fp);
 ````
 
 ### Set Lighting Schedule
-This example will set the lighting schedule to repeat all days of the week (MTWRFSN) with an on time of 1600 and an off time of 0730 with an initial lighting level if 100%.
+This example will set the lighting schedule to repeat all days of the week (MTWRFSN) with an on time of 1600, an off time of 0730, and an initial lighting level of 100%.
 
 ````php
 $fp = fsockopen('10.0.0.X', 4001, $errno, $errstr, 30);
